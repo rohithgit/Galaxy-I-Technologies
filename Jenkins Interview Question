@@ -1,3 +1,40 @@
 1. How to add slaves in jenkin?
 2. How to install jenkins in windows>
 3. how to install linus salve on windows jenkins?
+
+
+
+
+
+1. How to start Jenkins manually?
+(Jenkins_url)/restart: Forces a restart without waiting for builds to complete
+(Jenkin_url)/safeRestart: Allows all running builds to complete
+
+To start Jenkins: jenkins.exe start
+To stop Jenkins: jenkins.exe stop
+To restart Jenkins: jenkins.exe restart
+
+2. why Do we use join plugin in jenkins?
+This plugin allows a job to be run after all the immediate downstream jobs have completed.
+The plugin is useful for creating a 'diamond' shape project dependency.   This means there is a single parent job that starts several downstream jobs.
+
+3. How to use HTML Publisher Plugin:
+HtmlPublisher plugin is useful to publish the html reports that your build generates to the job and build pages. Below are the steps to publish and archive the HTML report files
+
+1. Click on the Configure option for your Jenkins job.
+
+2. In the post build portion, look for the Publish HTML Reports option and select the checkbox. See the screen shot below
+
+3. What is the relation between Hudson and Jenkins?
+
+You can just say Hudson was the earlier name and version of current Jenkins. After some issue, the project name was changed from Hudson to Jenkins.
+
+4. Pipeline:
+users now can implement a project’s entire build/test/deploy pipeline in a Jenkinsfile
+
+5. Why do we use  fingerprints?
+Jenkins supports file fingerprinting to track dependencies.
+
+6. What is git & SVN
+
+svn is a Centralized Revision Control System, and git is a Distributed Revision Control System (DVCS)

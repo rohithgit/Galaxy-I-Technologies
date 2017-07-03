@@ -1,0 +1,29 @@
+What are the Commands to check Certificates ?
+
+Where Puppet Master Stores Certificates?
+
+What is Facter ?
+
+Is puppet Push or Pull Method?
+
+What is PUSH ?
+
+What is PULL ?
+
+What is Differece between CHEF, ANSIBLE, PUPPET and SALT?
+
+What is Module in puppet?
+
+Write Code  to deploy HTTPD?
+
+What is Manifest?
+
+What is Difference between Manifest and Module?
+
+Why Do we Use Inventry File? Is it Manditory to use while Deploying?
+
+How to Deploy CloudFormation Templates by Using Puppet?
+
+What are the Commands to sign Requested Certificates ?
+
+What is MCollective? Why DO we Use it ?

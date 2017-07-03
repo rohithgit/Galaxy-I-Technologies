@@ -1,0 +1,50 @@
+What is Ansible?
+Ansible is a software tool to deploy application using ssh without sny downtime.It is also used to manage and configure software applications. Ansible is developed by Python language.
+
+How Ansible Works?
+Ansible categorize into two types of server: controlling machines and nodes.
+The controlling machine, where Ansible is installed and Nodes are managed by this controlling machine over SSH. The location of nodes are specified by controlling machine through its inventory.
+
+The controlling machine (Ansible) deploys modules to nodes using SSH protocol and these modules are stored temporarily on remote nodes and communicate with the Ansible machine through a JSON connection over the standard output.
+
+What is Playbooks?
+Playbooks : Ansible playbooks are a way to send commands to remote computers in a scripted way. Instead of using Ansible commands individually to remotely configure computers from the command line, you can configure entire complex environments by passing a script to one or more systems.
+
+What is The hosts file?
+this is the Ansible Inventory file, and it stores the hosts, and their mappings to the host groups (webservers ,databases etc)
+
+How do I access a variable name programmatically?
+An example may come up where we need to get the ipv4 address of an arbitrary interface, where the interface to be used may be supplied via a role parameter or other input. Variable names can be built by adding strings together, like so:
+
+{{ hostvars[inventory_hostname]['ansible_' + which_interface]['ipv4']['address'] }}
+The trick about going through hostvars is necessary because it’s a dictionary of the entire namespace of variables. ‘inventory_hostname’ is a magic variable that indicates the current host you are looping over in the host loop.
+
+
+
+How does a Cookbook differ from a Recipe in Chef?
+The answer to this is pretty direct. You can simply say, “a Recipe is a collection of Resources, and primarily configures a software package or some piece of infrastructure. A Cookbook groups together Recipes and other information in a way that is more manageable than having just Recipes alone.”
+
+
+How do I see a list of all of the ansible_ variables?
+Ansible by default gathers “facts” about the machines under management, and these facts can be accessed in Playbooks and in templates. To see a list of all of the facts that are available about a machine, you can run the “setup” module as an ad-hoc action:
+Ansible -m setup hostname
+This will print out a dictionary of all of the facts that are available for that particular host.
+
+Specifying a user by Using a specific SSH private key?
+ansible -m ping hosts --private-key=~/.ssh/keys/id_rsa -u centos
+
+How to run  a playbook in dry-run mode?
+ansible-playbook playbooks/PLAYBOOK_NAME.yml --check
+
+Ansible tower?
+Ansible Tower, previously called the AWX project, is the fix to this problem. It is a comprehensive web-based UI for Ansible, containing the most important Ansible features, especially those that render better as graphical rather than text-based output, such as real-time node monitoring.
+
+Features of Ansible Tower?
+Role-based access control
+Job scheduling
+Portal mode
+Fully documented REST API
+Tower Dashboard
+Cloud integration
+
+Write a playbook for installing Tomcat, Httpd?

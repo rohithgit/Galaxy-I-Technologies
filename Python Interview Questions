@@ -1,0 +1,46 @@
+1. What are the supported data types in Python?
+Numbers
+String
+List
+Tuple
+Dictionary
+
+2. What is the purpose of PYTHONHOME environment variable?
+
+PYTHONHOME − It is an alternative module search path. It is usually embedded in the PYTHONSTARTUP or PYTHONPATH directories to make switching module libraries easy.
+
+3. How will you sort a list?
+list.sort([func]) − Sorts objects of list, use compare func if given.
+
+4. python ?
+
+5. how Do you compile python code?
+Python does not need to be compiled before it is run
+
+6. What is PEP 8?
+PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable.
+
+7. What are the built-in type does python provides?
+here are mutable and Immutable types of Pythons built in types Mutable built-in types
+
+List
+Sets
+Dictionaries
+Immutable built-in types
+
+Strings
+Tuples
+Numbers
+
+8. What is namespace in Python?
+
+In Python, every name introduced has a place where it lives and can be hooked for. This is known as namespace.
+
+
+9. What is lambda in Python?
+
+It is a single expression anonymous function often used as inline function.
+
+How can you copy an object in Python?
+
+To copy an object in Python, you can try copy.copy () or copy.deepcopy() for the general case. You cannot copy all objects but most of them.

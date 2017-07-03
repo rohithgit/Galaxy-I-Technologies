@@ -1,0 +1,65 @@
+1. How to create Docker Images?
+
+2. How to run Docker Images/
+
+3. How to deploy Docker Images?
+
+4. Whats Is EC2?
+
+5. What is EC2 Container Service?
+
+6. What is Elasticsearch Service?
+
+7. What is CodeDeploy?
+
+8. What is CloudFront?
+
+9. What is CloudFormation?
+
+10. what is API Gateway?
+
+11. What is EMR?
+
+12. How to migrate stuff to AWS?
+
+13. Clearcase?
+
+14. Route 53?
+
+15. Kibana ?
+
+16. how to see services in Kibana?
+
+17. How to check service transactions in Kibana?
+
+18. git branching?
+
+19. how to write chef cookbooks?
+
+20. chef vs ANSIBLE
+
+21. How to add slaves in jenkins
+
+22. How to install jenkins in windows>
+
+23. how to install linus salve on windows jenkins?
+
+24. About your Project? and Tools?
+
+
+Salt-Stack:
+1. what is Salt-Stack? why we use it?
+
+2. Salt-Stack structure? (folder structure)
+
+3. Salt Modules?
+
+4. what is salt-master?
+
+5. what is runners in salt-stack?
+
+6. Orchestration runner?
+
+7. ORDERING & REQUISITES?
+
+8. File.manager in SS?

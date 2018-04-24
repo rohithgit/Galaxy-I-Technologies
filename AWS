@@ -1,0 +1,36 @@
+Q: Is it possible to modify the route tables of virtual private cloud? If possible then how? 
+
+Yes, it is possible go modify the route table of VPC. In order to specify which subnets are to be routed to VPC, Internet gateway or any other instances you are allowed to create route rules.
+
+Q: Mention the process in which instances without public IP addresses access the Internet.
+
+There are two ways in which instances without public addresses can make use of the Internet. 
+
+Those instances that are without public IP addresses can route their traffic through a NAT instance or a NAT gateway so that it can access the Internet. In order to traverse the Internet, these instances make use of public IP address of the NAT gateway or the NAT instance. Outbound communication is allowed by the NAT instance or NAT gateway but it do not permit machines on the Internet to start a connection with the addressed instances privately. 
+
+For those VPCs that are provided by a hardware VPN connection or direct connect connection, the instances can route the Internet traffic through the virtual private gateway to the existing data centre. It can then access the Internet through the existing egress points and also new tweak security or monitoring devices.
+
+
+Q3). What are the main components of AWS?
+
+Answer: Elow mentioned are the key components of AWS:
+
+    Route 53: A DNS web facility
+    Easy E-mail Facility: It permits transfer of e-mail using RESTFUL API demand or through consistent SMTP
+    Self and Access Organization: It offers improved security and uniqueness management for your AWS account
+    Simple Storage Device known as S3: It is a storing device and the greatest extensively used AWS service
+    Elastic Compute Cloud known as EC2: It offers on-demand computing properties for hosting requests. It is very valuable in case of random workloads
+    Elastic Block Store known as EBS: It delivers determined storage volumes that assign to EC2 to permit you to continue data past the lifetime of a single EC2
+    CloudWatch: To screen AWS possessions, it permits administrators to assess and gather key. Similarly, one can set an announcement alarm in case of issue
+    
+    
+Q- There are chiefly four types of storage offered by AWS.
+
+    Amazon EBS: Its sturdy, block-level storage capacities can involve in running Amazon EC2 occurrence. The Amazon EBS volume continues self-sufficiently from the running lifespan of an Amazon EC2 occurrence. After an EBS volume is involved to an example, you can use it like any other bodily hard drive. Amazon EBS encryption feature provisions encryption feature.
+    Amazon EC2 Instance Store: Storage disk that is involved to the host computer is mentioned to as occurrence store. The instance storage offers provisional block-level storing for Amazon EC2 instances. The data on an illustration store volume perseveres only during the life of the related Amazon EC2 instance; if you halt or dismiss an instance, any data on occurrence store volumes is misplaced.
+    Amazon S3: Amazon S3 delivers access to dependable and budget data storage organization. It is intended to make web-scale calculating simpler by permitting you to store and save any amount of data, at any period, from within Amazon EC2 or anyplace on the web.
+    Addition Storage: Every time your presentation an occurrence from an AMI, a root storage device is twisted for that occurrence. The root storage device comprises all the information essential to boot the occurrence. You can stipulate storage volumes in calculation to the root device volume when you generate an AMI or present an instance using hunk device mapping.
+
+How can you send request to Amazon S3?
+A25: Amazon S3 is a REST service, you can send request by using the REST API or the AWS SDK wrapper libraries that wrap the underlying Amazon S3 REST API.
+
